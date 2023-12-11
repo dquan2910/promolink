@@ -30,7 +30,7 @@ function copy() {
             var promotionId = promolink.substring(posOfPromotionId + 13, posOfSignature);
             var signature =  promolink.substring(posOfSignature + 11);
             document.getElementById("thongbao").innerHTML = "";
-            var bodyCode = "{\n\t\"voucher_promotionid\":" + promotionId + "\n\t\"signature\":\"" + signature + "\"\n\t\"signature_source\":\"0\"\n}";
+            var bodyCode = "{\n\t\"voucher_promotionid\":" + promotionId + ",\n\t\"signature\":\"" + signature + "\",\n\t\"signature_source\":\"0\"\n}";
             
             document.getElementById("bodycode").value = bodyCode;
         }
